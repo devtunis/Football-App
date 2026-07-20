@@ -4,18 +4,28 @@
 @media (max-width: 800px) {
 
 .switch-bar{
-    width: 99%;
-    height: 9vh;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    width: 60%;
+    height:6.5vh;
+  
     position: absolute;
     bottom: 0;
     
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
    
+      background: rgba(8, 10, 11, 0.90);  
+       backdrop-filter: blur(20px);
+       -webkit-backdrop-filter: blur(20px); 
+       border-radius: 16px;
+       border: 1px solid rgba(255, 255, 255, 0.15); 
+ 
+ 
+  border: 1px solid rgba(255, 255, 255, 0.15); 
+
+        
+
     
 
 }
@@ -32,7 +42,7 @@
     cursor: pointer;
     user-select: none;
     span{
-        font-size: 11.5px;
+        font-size: 11px;
         letter-spacing:1px;
         font-weight: bold;
         font-family: sans-serif;
@@ -57,21 +67,16 @@ a{
 } 
    
 
-.content-icon:active{
+.content-icon img:active{
     transform: scale(1.1);
 }
 
 .active-link{
   
-         background-color: rgba(165, 13, 13, 0.5);
-         border-radius: 10px;
-         padding-left: 10px;
-         padding-right: 10px;
-         
-         padding-bottom: 10px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         backdrop-filter: blur(3px);
+         /* background-color: oklch(71.564% 0.14535 93.436 / 0.986);
+  */
+     
+       transform: scale(1.6);
+          
 }
  

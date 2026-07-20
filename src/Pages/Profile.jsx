@@ -26,7 +26,8 @@ const Profile = () => {
 
     ])
 
-    const [online,Setonline]  = useState(false)
+    const [online,Setonline]  = useState(true)
+    const [isVervied, SetisVerfied] = useState(true)
   return (
     <div className='profile'>
 
@@ -51,14 +52,15 @@ const Profile = () => {
             <div className="profile_right">
                 
                 <h1 className='nickName'>Ghaith</h1>
-                <h1 className='idName'>@ghaith_7</h1>
+                <h1 className='idName'>@ghaith_7  {isVervied && <img src='/VerfiedIcon/blue.svg'/>}</h1>
                 <div className='badgesContainer'>
-                <Badge img={"/myTeamIcon/star.svg"} title={"MVP"} />
-                <Badge img={"/myTeamIcon/player.png"} title={"Best Performer"} />
+                 <Badge img={"/myTeamIcon/player.png"} title={"Best Player"} />
+                {/* <Badge img={"/myTeamIcon/star.svg"} title={"MVP"} />
+              
                 <Badge img={"/myTeamIcon/football.png"} title={"Top Striker"} />
                 <Badge img={"/myTeamIcon/world-cup.png"} title={"World Champion"} />
                 <Badge img={"/myTeamIcon/soccer-ball.png"} title={"soccer-kick"} />
-                <Badge img={"/myTeamIcon/game.png"} title={"best Goal"} />
+                <Badge img={"/myTeamIcon/game.png"} title={"best Goal"} /> */}
                                    
                 </div>
             </div>

@@ -24,7 +24,7 @@ const HomeScore = () => {
                     }
                     
                     >
-                     <img onClick={()=>HandelVibrate()} src='/pictuerSwitchBar/home.svg' />
+                     <img onClick={()=>HandelVibrate()} src='/myTeamIcon/homee.svg' />
                          
                      </NavLink>
 
@@ -80,7 +80,7 @@ const HomeScore = () => {
                         }
                     
                     >
-                   <img onClick={()=>HandelVibrate()}  src='/pictuerSwitchBar/train.png' />
+                   <img onClick={()=>HandelVibrate()}  src='/myTeamIcon/stade.svg' />
 
                 
                          
@@ -100,7 +100,7 @@ const HomeScore = () => {
                         }
                     
                     >
-                    <img  onClick={()=>HandelVibrate()}  src='/pictuerSwitchBar/profile.svg' />
+                    <img  onClick={()=>HandelVibrate()}  src='/myTeamIcon/user__profile.svg' />
                 
                          
                     </NavLink>

@@ -37,6 +37,7 @@ const Scores = () => {
   
  ])
  const [TheirNews , SetTheirNews] =  useState(false)
+ const [count,seetCount] = useState(33)
 
   return (
 
@@ -137,7 +138,7 @@ const Scores = () => {
       </div>
           
          <div className="right">
-           <span>view all</span>
+          
          <img src="/myTeamIcon/view1.svg" loading="lazy"/>
          </div>
 
@@ -165,7 +166,8 @@ const Scores = () => {
          <img src="/myTeamIcon/view1.svg" loading="lazy"/>
          </div>
 
-        
+          <img src='/navbaricon/Koura.png'/>
+           
  </div> */}
 
  
@@ -175,29 +177,49 @@ const Scores = () => {
 
  
     <div className="news_card"> 
-    <div className="left-news-card-image">
-     <img src='/Memories/IMG_6190.jpg' loading="lazy" />  
-     </div>
-       <div className="right-news-card-images"></div>
-       
+      
+         <div className="left_news_cards">
+          <img src='/Memories/b.jpg'/>
+         </div>
+
+          <div className="right_news_cards">
+              
+
+             <div className="leftnew_card__">
+              <h1>Goals</h1>
+              
+              <div className='spnumber'>4</div>
+             </div>
+
+
+             <div className="middle_news_card__"></div>
+
+             <div className="right_news_cards__">
+
+              <h1>Likes</h1>
+              <div className="info_button_likes">
+               <h1>{count}</h1>
+               <img src='/myTeamIcon/heart.svg' onClick={()=>seetCount((prev)=>prev+10)}/>
+              </div>
+             </div>
+
+
+
+    
+
+          </div>  
+
+
+
+ 
     </div>
+ 
 
-  <div className="news_card"> 
-    <div className="left-news-card-image">
-     <img src='/Memories/IMG_6190.jpg' loading="lazy" />  
-     </div>
-   
-    </div>
+ 
 
 
-
-  <div className="news_card"> 
-    <div className="left-news-card-image">
-     <img src='/Memories/IMG_6190.jpg' loading="lazy" />  
-     </div>
-    </div>
-
-
+  
+ 
  
  </div>
 

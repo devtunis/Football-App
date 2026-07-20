@@ -13,6 +13,14 @@
 .nav_bar_profile{
     width: 100%;
     height:5vh;
+       background: rgba(8, 10, 11, 0.90); /* Semi-transparent */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+
+
     /* background-color: rgb(116, 11, 11); */
     display: flex;
     align-items: center;
@@ -60,6 +68,9 @@
         justify-content: center;
        
         /* align-items: center; */
+    }
+    .profile_left{
+        transform: translateY(6px);
     }
     .profile_right {
         width: 70%;
@@ -114,10 +125,17 @@
  .idName{
     color: var(--nest-text-color);
     font-size: 19px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 3px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
  }
  .badgesContainer{
-    width: 100%;
+    width: 98%;
     height: 8vh;
     display: flex;
     gap: 10px;
@@ -127,6 +145,16 @@
     align-items: center;
     overflow-x: auto;
     /* background-color: rgb(15, 15, 14); */
+
+
+   background: rgba(8, 10, 11, 0.90); /* Semi-transparent */
+   backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+   border-radius: 16px;
+   border: 1px solid rgba(255, 255, 255, 0.15);
+        
+
+
   
  }
 
@@ -139,6 +167,9 @@
     justify-content: space-around;
     overflow-y: auto;
      gap: 5px;
+   
+
+     
 
  }
 
@@ -239,7 +270,7 @@
     font-size: 13px;
     color: var(--text-color);
     letter-spacing: 1.5px;
-    font-weight: 100;
+    font-weight: bold;
 }
 .right_card_session img{
     width:25px;
