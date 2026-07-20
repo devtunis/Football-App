@@ -1,0 +1,82 @@
+.Card{
+    width: 90%;
+    height:90px;
+    background-color: #1A2023;
+    background: rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-shrink: 0;
+    
+}
+
+.left-avtar  {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(199, 173, 173);
+    border-radius: 100%;
+  
+    
+}
+
+.left-avtar  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: contain;
+    user-select: none;
+}
+
+.middleAvatr{
+     
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    user-select: none;
+}
+.middleAvatr h1{
+    color: aliceblue;
+    font-size: 23px;
+}
+.middleAvatr span{
+    color: rgb(209, 200, 200);
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.right-side button{
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    user-select: none;
+    transition: 0.2s all ease;
+}
+.right-side button:first-child{
+    background-color: #E8536E;
+    background-color: var(--icon-color);
+    color: black;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.right-side button:nth-child(2){
+    border:1px solid var(--icon-color);
+    color: white;
+    font-weight: bold;
+    background-color: #1A2023;
+}
+
+.right-side button:active{
+    transform: scale(1.1);
+}
+
+ 

@@ -1,0 +1,222 @@
+import React, { useEffect, useState } from 'react'
+import "./scores.css"
+import CardInfo from "../Component/CardInfo.jsx"
+import FinshedMatches  from "../Component/FinshedMatches.jsx"
+import axios from "axios"
+import  use from "react"
+
+const Scores = () => {
+ const [card,SetCard] = useState([
+
+    {
+    id: 1,
+    title: "Big summer transfers confirmed today",
+    category: "TRANSFER",
+    time: "2h ago",
+    image:
+      "https://images.unsplash.com/photo-1547347298-4074fc3086f0",
+  },
+  {
+    id: 2,
+    title: "City wins in the last minute!",
+    category: "CHAMPIONS LEAGUE",
+    time: "5h ago",
+    image:
+      "https://images.unsplash.com/photo-1517466787929-bc90951d0974",
+  },
+  {
+    id: 3,
+    title: "Controversial goal sparks debate",
+    category: "VAR DECISION",
+    time: "1d ago",
+    image:
+      "https://images.unsplash.com/photo-1547347298-4074fc3086f0",
+  },
+
+
+  
+ ])
+ const [TheirNews , SetTheirNews] =  useState(false)
+
+  return (
+
+      <> 
+                
+  
+     <div className="Container">
+
+      <div className="navbar">
+
+
+        <div className="logo-content-container">
+          <div className="avatar-logo">
+           <img src="/navbaricon/Koura.png"  alt="Ghaith"/>  
+          </div>
+  
+          <h1>Koura</h1>
+        </div>
+
+
+
+        <div className="info-content-container">
+          <div className="search">
+            <img src="/myTeamIcon/search.svg"/>
+          </div>
+
+
+          <div className="notifaction">
+                <span className="popup"></span>
+                <img src="/myTeamIcon/notifaction.svg"/>
+          </div>
+
+          <div className="avatar-user">
+          <span className="popup2"></span>
+
+            <img src="/testpic/man.PNG"/>
+              
+
+          </div>
+        </div>
+
+      </div>
+
+      <div className="watchScreen">
+
+        <img src="/testpic/bbg.png" loading="lazy" />
+          {
+            TheirNews?   
+              <>
+              <div className="breaknews"><h1>News</h1></div>
+                <p className="description2"> wey koul we7d ijib 500 zeyda  </p>  
+              
+              </>
+           
+
+             
+             
+             :  <p className="description">Welcome back ,Ghiath 👋  </p> 
+          }
+         
+          <h1 className="description-mem">Play football.</h1>
+          <div className="description-mem2">
+          <h1 className="first-desc">Make</h1>
+          <h1 className="seconde-one">memories.</h1>
+        </div>
+
+        <div className="viewAll">
+          <span>view all</span>
+         <img src="/myTeamIcon/view2.svg" loading="lazy"/>
+
+        </div>
+
+      <div className="info-koura">
+           <h1>Incoming Matches</h1>
+           <small className="small"></small>
+           <span>2 upcoming</span>
+
+        </div>
+        
+        
+      </div>
+
+ 
+     <div className="viewAllList">
+      
+       <CardInfo teamFull = {false}/>
+       <CardInfo teamFull = {false}/>
+       <CardInfo teamFull = {true}/>
+
+      
+      </div>  
+
+
+
+    <div className="FinshedMatches">
+      <div className="left">
+        <h1>Finished Matches</h1>
+      </div>
+          
+         <div className="right">
+           <span>view all</span>
+         <img src="/myTeamIcon/view1.svg" loading="lazy"/>
+         </div>
+
+        
+    </div>
+
+  
+  <div className="Banner-Finsih">
+            <FinshedMatches/>
+            <FinshedMatches/>
+            <FinshedMatches/>
+            <FinshedMatches/>
+            <FinshedMatches/>
+  </div>
+
+
+
+ {/* <div className="FinshedMatches">
+      <div className="left">
+        <h1>Football news</h1>
+      </div>
+          
+         <div className="right">
+           <span>view all</span>
+         <img src="/myTeamIcon/view1.svg" loading="lazy"/>
+         </div>
+
+        
+ </div> */}
+
+ 
+      
+      
+ <div className="Section-cards">
+
+ 
+    <div className="news_card"> 
+    <div className="left-news-card-image">
+     <img src='/Memories/IMG_6190.jpg' loading="lazy" />  
+     </div>
+       <div className="right-news-card-images"></div>
+       
+    </div>
+
+  <div className="news_card"> 
+    <div className="left-news-card-image">
+     <img src='/Memories/IMG_6190.jpg' loading="lazy" />  
+     </div>
+   
+    </div>
+
+
+
+  <div className="news_card"> 
+    <div className="left-news-card-image">
+     <img src='/Memories/IMG_6190.jpg' loading="lazy" />  
+     </div>
+    </div>
+
+
+ 
+ </div>
+
+
+
+
+
+
+
+
+
+
+     </div>
+
+     
+
+      </>
+   
+  )
+}
+
+export default Scores
