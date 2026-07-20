@@ -5,14 +5,15 @@
 .profile{
     width: 100%;
     height: 80vh;
-    background-color:rgb(172, 144, 144);
-    color: black;
+    background-color: #060809;
+    
+    
 }
 
 .nav_bar_profile{
     width: 100%;
     height:5vh;
-    background-color: rgb(116, 11, 11);
+    /* background-color: rgb(116, 11, 11); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +26,7 @@
         font-weight: bold;
         font-size: 20px;
         letter-spacing: 1px;
+        transform: translateX(5px)
     }
 
   
@@ -35,7 +37,16 @@
         width: 100%;
         height: 20vh;
         margin-top: 10px;
-        background-color: rgb(216, 206, 206);
+       background-color: #060809;
+
+
+         background: rgba(8, 10, 11, 0.90); /* Semi-transparent */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        
+           
         display: flex;
         align-items: center;
 
@@ -44,7 +55,7 @@
     .profile_left{
         width: 30%;
         height: 100%;
-        background-color: rgb(60, 55, 122);
+        /* background-color: rgb(60, 55, 122); */
         display: flex;
         justify-content: center;
        
@@ -53,7 +64,7 @@
     .profile_right {
         width: 70%;
         height: 100%;
-        background-color: red;
+        /* background-color: red; */
     }
  .Avart_profile{
     position: relative;
@@ -80,6 +91,21 @@
     border-radius: 100%;
 
  }
+
+  .offline_profile_user{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(214, 2, 2, 0.904);
+    position: absolute;
+    bottom:  0;
+    right: 10px;
+
+    border-radius: 100%;
+
+ }
+
+
+
  .nickName{
     color: var(--text-color);
     font-size: 25px;
@@ -95,12 +121,133 @@
     height: 8vh;
     display: flex;
     gap: 10px;
+    margin-top: 5px;
    
     
     align-items: center;
     overflow-x: auto;
-    background-color: rgb(15, 15, 14);
+    /* background-color: rgb(15, 15, 14); */
   
  }
+
+ .info_profile_s{
+    width: 100%;
+    height: 11vh;
+    /* background-color: rgb(253, 222, 222); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y: auto;
+     gap: 5px;
+
+ }
+
+ .view_box{
+    width:100px;
+    
+    height: 80%;
+  
+   
+   
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+
+
+    background: rgba(8, 10, 11, 0.90); /* Semi-transparent */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    user-select: none;
+
+
+
+    gap: 6px;
+    h2{
+        font-size: 15px;
+        color: var(--nest-text-color);
+        
+    }
+    h1{
+        font-size: 20px;
+        color: var(--text-color);
+        letter-spacing: 2px;
+    }
+ }
+
+ .session___setting{
+    margin-top: 5px;
+    width: 100%;
+    height: 45vh;
+  
+    background: rgba(8, 10, 11, 0.90); /* Semi-transparent */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    user-select: none;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+    
+ }
  
+ .card_session{
+    width: 98%;
+    height:50px;
+
+ 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.15);
+ }
+ .left_card_session{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(180, 83, 83); */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+  .right_card_session{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(94, 63, 63); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+.left_card_session img{
+    width: 28px;
+    height: 28px;
+}
+.left_card_session h1{
+    font-size: 13px;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+.right_card_session img{
+    width:25px;
+
+    height: 25px;
+
+}
+ 
+
+
 }

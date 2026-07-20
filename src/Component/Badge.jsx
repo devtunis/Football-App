@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Badge.css"
-const Badge = () => {
+const Badge = ({title ,img}) => {
   return (
     <div className='badge'>
-        <img src='/myTeamIcon/star.svg'/>
-        <h2>Top Player</h2>
+        <img src={img}/>
+        <h2>{title}</h2>
     </div>
   )
 }

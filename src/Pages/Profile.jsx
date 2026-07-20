@@ -1,7 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Profile.css"
 import Badge from '../Component/Badge'
+import {
+  RadarChart,
+  Radar,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  ResponsiveContainer,
+  Tooltip
+} from "recharts";
+ 
+
 const Profile = () => {
+    const [data,SetData] = useState([
+
+
+    
+  { stat: "Pace", value: 90 },
+  { stat: "Shooting", value: 85 },
+  { stat: "Passing", value: 80 },
+  { stat: "Dribbling", value: 95 },
+ 
+
+
+    ])
+
+    const [online,Setonline]  = useState(false)
   return (
     <div className='profile'>
 
@@ -14,9 +39,11 @@ const Profile = () => {
         <div className="Profile_pictuer_image_content">
             
             <div className="profile_left">
+                
+               
                 <div className="Avart_profile">
                     <img src='/Memories/IMG_6190.jpg'/>
-                    <small className='online_profile_user'></small>
+                    <small className={online ?'online_profile_user' : 'offline_profile_user'}></small>
                 </div>
              
             </div>
@@ -26,15 +53,115 @@ const Profile = () => {
                 <h1 className='nickName'>Ghaith</h1>
                 <h1 className='idName'>@ghaith_7</h1>
                 <div className='badgesContainer'>
-                    <Badge/>
-                      <Badge/>
-                        <Badge/>
-                          <Badge/>
-                            <Badge/>
-                            
+                <Badge img={"/myTeamIcon/star.svg"} title={"MVP"} />
+                <Badge img={"/myTeamIcon/player.png"} title={"Best Performer"} />
+                <Badge img={"/myTeamIcon/football.png"} title={"Top Striker"} />
+                <Badge img={"/myTeamIcon/world-cup.png"} title={"World Champion"} />
+                <Badge img={"/myTeamIcon/soccer-ball.png"} title={"soccer-kick"} />
+                <Badge img={"/myTeamIcon/game.png"} title={"best Goal"} />
+                                   
                 </div>
             </div>
         </div>
+
+
+    <div className="info_profile_s">
+         
+        <div className="view_box">
+            <h2>Matches</h2>
+            <h1>24</h1>
+        </div>
+
+         <div className="view_box">
+            <h2>wins</h2>
+            <h1>43</h1>
+        </div>
+
+        <div className="view_box">
+            <h2>Goal</h2>
+            <h1>999</h1>
+        </div>
+
+       <div className="view_box">
+            <h2>Assists</h2>
+            <h1>433</h1>
+        </div>
+
+    </div>
+
+    <div className="session___setting">
+
+
+            <div className="card_session">
+                <div className="left_card_session">
+                    <img src='/profile_icon/education.svg'/>
+                    <h1>My Session</h1>
+                 </div>
+                <div className="right_card_session">  <img src='/myTeamIcon/view2.svg'/></div>
+            </div>
+
+       
+
+                   <div className="card_session">
+                <div className="left_card_session">
+                    <img src='/profile_icon/calendar.svg'/>
+                    <h1>My Booking</h1>
+                 </div>
+                <div className="right_card_session">  <img src='/myTeamIcon/view2.svg'/></div>
+            </div>
+
+
+
+                        <div className="card_session">
+                <div className="left_card_session">
+                    <img src='/profile_icon/favorite.svg'/>
+                    <h1>My Favorite</h1>
+                 </div>
+                <div className="right_card_session">  <img src='/myTeamIcon/view2.svg'/></div>
+            </div>
+
+
+
+                        <div className="card_session">
+                <div className="left_card_session">
+                    <img src='/profile_icon/achievements.svg'/>
+                    <h1>Stats & Ranking</h1>
+                 </div>
+                <div className="right_card_session">  <img src='/myTeamIcon/view2.svg'/></div>
+            </div>
+
+
+
+              <div className="card_session">
+                <div className="left_card_session">
+                    <img src='/profile_icon/friends.svg'/>
+                    <h1>My Freinds</h1>
+                 </div>
+                <div className="right_card_session">  <img src='/myTeamIcon/view2.svg'/></div>
+            </div>
+
+
+                 <div className="card_session">
+                <div className="left_card_session">
+                    <img src='/profile_icon/achievements.svg'/>
+                    <h1>Achievements</h1>
+                 </div>
+                <div className="right_card_session">  <img src='/myTeamIcon/view2.svg'/></div>
+            </div>
+
+
+                  <div className="card_session">
+                <div className="left_card_session">
+                    <img src='/myTeamIcon/setting.svg'/>
+                    <h1>Setting</h1>
+                 </div>
+                <div className="right_card_session">  <img src='/myTeamIcon/view2.svg'/></div>
+            </div>
+
+
+
+    </div>
+
 
 
 

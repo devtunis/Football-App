@@ -189,5 +189,6 @@ Whether you're a player, coach, academy, or local league, Football Connect helps
 ### One App. Every Match. Every Team. Every Player.
 
 ⭐ Don't forget to star this repository if you like the project!
+<img width="1343" height="932" alt="image" src="https://github.com/user-attachments/assets/7911a32d-31db-4c7e-ad7b-07599e96f791" />
 
 </div>
