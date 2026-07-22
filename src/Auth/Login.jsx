@@ -1,8 +1,9 @@
 import "./login.css";
 import { LogIn, UserPlus } from "lucide-react";
  
-
+import { useNavigate } from "react-router-dom";
 const  Login =()=> {
+  const Nav = useNavigate()
 
   const HandelLogin = () => {
     Nav("/myTeam");
@@ -10,9 +11,7 @@ const  Login =()=> {
   const CreateAccount = ()=>{
     Nav("/CreateAccount")
   }
-  const CreateCreatorAccount = ()=>{
-    Nav("/CreateAccount")
-  }
+  
 
 
 
@@ -31,12 +30,12 @@ const  Login =()=> {
           PUSH YOUR LIMITS. ELEVATE <span>YOUR GAME.</span>
         </p>
 
-        <button className="primaryBtn">
+        <button className="primaryBtn" onClick={()=>HandelLogin()}>
           <LogIn size={20} />
           Log In
         </button>
 
-        <button className="secondaryBtn">
+        <button className="secondaryBtn" onClick={()=>CreateAccount()}>
           <UserPlus size={20} />
           Sign Up
         </button>
