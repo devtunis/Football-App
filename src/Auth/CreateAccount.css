@@ -1,0 +1,346 @@
+ 
+ 
+
+.create_account{
+
+    width:100%;
+
+    min-height:95vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top,#243d08,#111822 45%,#090b10);
+
+}
+
+
+/* BACKGROUND LIGHT */
+
+.blur{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(130px);
+
+}
+
+
+.blur1{
+
+    width:350px;
+
+    height:350px;
+
+    background:#A6D627;
+
+    top:-120px;
+
+    left:-120px;
+
+    opacity:.18;
+
+}
+
+
+.blur2{
+
+    width:350px;
+
+    height:350px;
+
+    background:#7CB518;
+
+    bottom:-150px;
+
+    right:-100px;
+
+    opacity:.12;
+
+}
+
+
+
+/* CARD */
+
+.register_card{
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:35px 25px;
+
+    border-radius:28px;
+
+
+    background:rgba(18,22,30,.92);
+
+    backdrop-filter:blur(20px);
+
+
+    border:1px solid rgba(166,214,39,.18);
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.6);
+
+}
+
+
+
+/* TITLE */
+
+.register_card h1{
+
+    color:white;
+
+    text-align:center;
+
+    font-size:32px;
+
+}
+
+
+.register_card p{
+
+    text-align:center;
+
+    color:#A6D627;
+
+    margin-top:8px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* IMAGE */
+
+.profile{
+
+    width:130px;
+
+    height:130px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    border:3px solid #A6D627;
+
+    background:#111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+}
+
+
+.profile img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+.camera{
+
+    font-size:30px;
+
+}
+
+
+.profile span{
+
+    color:white;
+
+    font-size:12px;
+
+}
+
+
+
+/* INPUTS */
+
+.inputBox{
+
+    width:100%;
+
+    height:58px;
+
+    margin-top:16px;
+
+    display:flex;
+
+    align-items:center;
+
+
+    background:#121922;
+
+    border:1px solid #293442;
+
+    border-radius:16px;
+
+
+    padding:0 16px;
+
+}
+
+
+
+.inputBox span{
+
+    font-size:18px;
+
+}
+
+
+.inputBox input{
+
+
+    flex:1;
+
+    height:100%;
+
+    margin-left:12px;
+
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+
+    color:white;
+
+    font-size:16px; /* IMPORTANT FOR MOBILE ZOOM */
+
+}
+
+
+
+.inputBox input::placeholder{
+
+    color:#78808c;
+
+}
+
+
+
+/* PASSWORD EYE */
+
+.eye{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+}
+
+
+
+/* BUTTON */
+
+
+.registerBtn{
+
+    width:100%;
+
+    height:58px;
+
+
+    margin-top:30px;
+
+
+    border:none;
+
+    border-radius:18px;
+
+
+    background:linear-gradient(
+        135deg,
+        #A6D627,
+        #8BCF20
+    );
+
+
+    color:#111;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+
+    cursor:pointer;
+
+}
+
+
+/* MOBILE FIX */
+
+
+@media(max-width:500px){
+
+
+.create_account{
+
+    align-items:flex-start;
+
+    padding-top:40px;
+
+}
+
+
+
+.register_card{
+
+    padding:30px 20px;
+
+}
+
+
+
+.register_card h1{
+
+    font-size:28px;
+
+}
+
+
+.inputBox{
+
+    height:56px;
+
+}
+
+
+}

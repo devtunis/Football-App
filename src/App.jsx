@@ -9,6 +9,8 @@ import Matchs from './Pages/Matchs'
 import HomeScore from './HomeScore/HomeScore'
 import News from './SocialMedia/News'
 import Profile from './Pages/Profile'
+import CreateAccount from './Auth/CreateAccount'
+import CreateCreatorAccount from './Auth/CreateCreatorAccount'
 
 const App = () => {
   return (
@@ -17,6 +19,11 @@ const App = () => {
      <Routers>
       <Path    path={'/login'} element={<Login/>}/>
       <Path    path={'/myTeam'} element={<MyTeam/>}/>
+
+      <Path    path={'/CreateAccount'} element={<CreateAccount/>}/>
+  <Path    path={'/CreateCreatorAccount'} element={<CreateCreatorAccount/>}/>
+
+
 
       <Path    path={'/Home'} element={<HomeScore/>}>
       

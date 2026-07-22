@@ -1,58 +1,47 @@
-import React from "react";
 import "./login.css";
-import { useNavigate } from "react-router-dom";
+import { LogIn, UserPlus } from "lucide-react";
+ 
 
-const Login = () => {
-
-  const Nav = useNavigate();
+const  Login =()=> {
 
   const HandelLogin = () => {
     Nav("/myTeam");
   };
+  const CreateAccount = ()=>{
+    Nav("/CreateAccount")
+  }
+  const CreateCreatorAccount = ()=>{
+    Nav("/CreateAccount")
+  }
+
+
 
   return (
-    <div className="Login">
+    <div className="login">
+      <div className="overlay" />
 
-      <div className="player_view">
+      <div className="content">
+        <img src={"/navbaricon/Koura.png"} alt="Sky Sports" className="logo" />
 
-        <div className="player_ring">
-          <img src="/loginPics/soccer-player.png" alt="player" />
-        </div>
+        <h1>
+          Sky <span>Sports</span>
+        </h1>
 
+        <p className="subtitle">
+          PUSH YOUR LIMITS. ELEVATE <span>YOUR GAME.</span>
+        </p>
+
+        <button className="primaryBtn">
+          <LogIn size={20} />
+          Log In
+        </button>
+
+        <button className="secondaryBtn">
+          <UserPlus size={20} />
+          Sign Up
+        </button>
       </div>
-
-      <div className="player_bottom">
-
-        <div className="Title_Player">
-          <h1>Sky Sports</h1>
-        </div>
-
-        <div className="Title_Player_content">
-          <h2>Latest sports update & watch the best live</h2>
-          <h2>Coverage of your favourite sports</h2>
-        </div>
-
-        <div className="button__containers">
-
-          <div className="player_btn" onClick={HandelLogin}>
-            <img src="./walpaperAuth/user.svg" alt="" />
-            <h1 onClick={()=>HandelLogin()}>User</h1>
-          </div>
-
-          <div className="creator_btn">
-            <img src="./walpaperAuth/creator.svg" alt="" />
-            <h1>Creator</h1>
-          </div>
-          
-
-        </div>
-
-      <div className="creat__account">Don't have an account ?</div>
-      </div>
-
-
     </div>
   );
-};
-
-export default Login;
+}
+export default Login
