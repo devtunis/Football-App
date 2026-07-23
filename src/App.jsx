@@ -10,7 +10,10 @@ import HomeScore from './HomeScore/HomeScore'
 import News from './SocialMedia/News'
 import Profile from './Pages/Profile'
 import CreateAccount from './Auth/CreateAccount'
-import CreateCreatorAccount from './Auth/CreateCreatorAccount'
+import JoinSession from './Pages/JoinSession'
+import CreateSession from './Pages/CreateSession'
+import LoginYourAccount from './Auth/LoginYourAccount'
+ 
 
 const App = () => {
   return (
@@ -21,8 +24,10 @@ const App = () => {
       <Path    path={'/myTeam'} element={<MyTeam/>}/>
 
       <Path    path={'/CreateAccount'} element={<CreateAccount/>}/>
-  <Path    path={'/CreateCreatorAccount'} element={<CreateCreatorAccount/>}/>
-
+      
+      <Path    path={'/JoinSession'} element={<JoinSession/>}/>
+      <Path    path={'/CreateSession'} element={<CreateSession/>}/>
+      <Path    path={'/LoginAccount'} element={<LoginYourAccount/>}/>
 
 
       <Path    path={'/Home'} element={<HomeScore/>}>

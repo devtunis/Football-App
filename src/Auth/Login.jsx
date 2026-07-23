@@ -6,7 +6,7 @@ const  Login =()=> {
   const Nav = useNavigate()
 
   const HandelLogin = () => {
-    Nav("/myTeam");
+    Nav("/LoginAccount");
   };
   const CreateAccount = ()=>{
     Nav("/CreateAccount")

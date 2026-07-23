@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container_create_session{
+
+    width:100%;
+    min-height:100dvh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:25px;
+
+    background:
+    radial-gradient(circle at top,#153126 0%,#040708 45%),
+    #040708;
+
+    font-family:"Poppins",sans-serif;
+}
+
+.createSession{
+
+    width:550px;
+    max-width:100%;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    display:flex;
+    flex-direction:column;
+
+    gap:22px;
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.55);
+}
+
+.create_header{
+
+    text-align:center;
+}
+
+.create_icon{
+
+    width:85px;
+    height:85px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#b8ff30;
+
+    background:#10161a;
+
+    border:2px solid rgba(184,255,48,.25);
+
+    box-shadow:
+    0 0 35px rgba(184,255,48,.15);
+
+    margin-bottom:18px;
+}
+
+.create_header h1{
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+}
+
+.create_header p{
+
+    color:#8b9098;
+
+    line-height:1.6;
+}
+
+.upload_image label{
+
+    height:170px;
+
+    border:2px dashed rgba(184,255,48,.3);
+
+    border-radius:22px;
+
+    cursor:pointer;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:15px;
+
+    color:#b8ff30;
+
+    background:#0c1115;
+
+    transition:.3s;
+}
+
+.upload_image label:hover{
+
+    background:#11181d;
+
+    border-color:#b8ff30;
+}
+
+.upload_image input{
+    display:none;
+}
+
+.createSession input,
+.createSession textarea{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:#0d1318;
+
+    color:white;
+
+    border-radius:18px;
+
+    padding:18px 20px;
+
+    font-size:16px;
+
+    border:1px solid transparent;
+
+    transition:.3s;
+}
+
+.createSession textarea{
+
+    resize:none;
+
+    height:130px;
+}
+
+.createSession input:focus,
+.createSession textarea:focus{
+
+    border-color:#b8ff30;
+
+    box-shadow:
+    0 0 20px rgba(184,255,48,.15);
+}
+
+.createSession input::placeholder,
+.createSession textarea::placeholder{
+
+    color:#7b8189;
+}
+
+.createSession button{
+
+    height:62px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#040708;
+
+    background:
+    linear-gradient(135deg,#b8ff30,#8fd600);
+
+    transition:.35s;
+}
+
+.createSession button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 15px 35px rgba(184,255,48,.35);
+}
+
+@media(max-width:700px){
+
+.createSession{
+
+    padding:25px;
+}
+
+.create_header h1{
+
+    font-size:28px;
+}
+
+.create_icon{
+
+    width:70px;
+    height:70px;
+}
+
+.upload_image label{
+
+    height:140px;
+}
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+.container_create_session{
+    padding:16px;
+    align-items:flex-start;
+    padding-top:40px;
+    padding-bottom:40px;
+    overflow-y:auto;
+}
+
+.createSession{
+    width:100%;
+    padding:22px;
+    gap:18px;
+    border-radius:22px;
+}
+
+.create_header h1{
+    font-size:26px;
+}
+
+.create_header p{
+    font-size:14px;
+}
+
+.create_icon{
+    width:65px;
+    height:65px;
+    margin-bottom:14px;
+}
+
+.upload_image label{
+    height:120px;
+    gap:10px;
+    font-size:14px;
+}
+
+.upload_image svg{
+    width:28px;
+    height:28px;
+}
+
+.createSession input,
+.createSession textarea{
+    padding:16px;
+    font-size:15px;
+    border-radius:15px;
+}
+
+.createSession textarea{
+    height:100px;
+}
+
+.createSession button{
+    height:56px;
+    font-size:16px;
+    border-radius:15px;
+}
+
+}
+
+
+

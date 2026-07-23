@@ -1,12 +1,16 @@
 
+body{
+    overflow-x: hidden;
+}
+    
 
-
-@media (max-width: 800px) {
-
-    .myTeam{
-     
-        width: 100%;
-        height: 100vh;
+.Session-groups::-webkit-scrollbar {
+  display: none;
+}
+ 
+.myTeam{
+       width: 100%;
+        height: 100dvh;
           background: radial-gradient(
         circle at center,
         #163b25 0%,
@@ -14,15 +18,21 @@
         #040708 75%,
         #000000 100%
     );
-        
+
+   
     }
 
     .navbar-header{
         background-color: rgb(0,0,0,0.3);
         backdrop-filter: blur(3px);
         height: 8vh;
+
    
- 
+   background: rgba(8, 10, 11, 0.90); /* Semi-transparent */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
  
         
 
@@ -96,20 +106,566 @@
        
          margin-top: 2px;
        
-         height: 90vh;
+         height: 85vh;
          overflow: auto;
       
          border-radius: 10px;
         
          background-color: rgb(0,0,0,0.5);
          backdrop-filter: blur(3px);
-         
+         display: flex;
+         flex-wrap: wrap;
       
+         
+         gap: 10px;
 
          
          
        
     }
      
+
+    .add__session{
+        width: 34px;
+        height: 34px;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        position: absolute;
+        bottom:50px;
+        right: 180px;
+    
+        background: rgba(37, 176, 245, 0.9); /* Semi-transparent */
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: white;
+        z-index: 1999;
+         filter: drop-shadow(0 0 0.75rem rgb(196, 180, 183));
+
+
+
+
+    }
+    .ContainerSessionadding{
+        position: absolute;
+        bottom:30px;
+        right: 20px;
+        
+        width: 20%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 999;
+        user-select: none;
+                 
+    }
+    .create_session_card{
+        width: 50%;
+        height: 40%;
+         
+     
+        border-radius: 30px;
+
+            background: rgba(8, 10, 11, 0.90); /* Semi-transparent /
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); / Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+        /* filter: drop-shadow(0 0 0.75rem crimson); */
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        justify-content: space-around;
+
+        filter: drop-shadow(0 0 0.75rem var(--icon-color));
+        transform: translateX(15px);
+
+        
+
+    }
+    .create_session_card h1{
+         user-select: none;
+         font-size: 15px;
+         color: white;
+         font-family: "Akaya Kanadaka", system-ui;
+         font-weight: 400;
+         font-style: normal;
+    }
+    .avatar_create__session_card{
+        width: 30px;
+        height: 30px;
+       
+        border: 1px solid var(--icon-color);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .avatar_create__session_card img{
+        width: 100%;
+        height: 100%;
+        animation: Rotate 1s  linear infinite;
+    }
+
+    @keyframes Rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .create_session_card2{
+        width: 40%;
+        height: 40%;
+         
+        filter: drop-shadow(0 0 0.75rem var(--icon-color2));
+
+        border-radius: 30px;
+
+            background: rgba(8, 10, 11, 0.90); /* Semi-transparent /
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); / Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+        /* filter: drop-shadow(0 0 0.75rem crimson); */
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .create_session_card2 h1{
+         user-select: none;
+         font-size: 15px;
+         color: white;
+         font-family: "Akaya Kanadaka", system-ui;
+         font-weight: 400;
+         font-style: normal;
+    }
+    .avatar_create__session_card2{
+        width: 30px;
+        height: 30px;
+       
+        border: 1px solid var(--icon-color);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .avatar_create__session_card2 img{
+        width: 100%;
+        height: 100%;
+        animation: Rotate 10s  linear infinite;
+    }
+
+    @keyframes Rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+
+
+    .bounce {
+        transition: all 0.2s ease-in-out;
+    }
+    .bounce:active{
+        transform: scale(1.2);
+
+    }
+
+    .off {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+    .myTeam{
+     
+        width: 100%;
+        height: 100dvh;
+          background: radial-gradient(
+        circle at center,
+        #163b25 0%,
+        #0b1f16 35%,
+        #040708 75%,
+        #000000 100%
+    );
+        
+    }
+
+    .navbar-header{
+        background-color: rgb(0,0,0,0.3);
+        backdrop-filter: blur(3px);
+        height: 8vh;
+
+   
+   background: rgba(8, 10, 11, 0.90); /* Semi-transparent */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+ 
+        
+
+    }
+    .nav-option{
+         display: flex;
+    }
+    .first-nav-option{
+ 
+       
+         
+        width: 50%; 
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+            width: 25px;
+            height: 25px;
+            transform: translateX(10px);
+             user-select: none;
+        }
+        h1{ 
+            transform: translateX(15px);
+            font-size: 20px;
+            color: #f3eaea;
+            font-weight: bold;
+            font-family:sans-serif;
+            letter-spacing:1.4px;
+            user-select: none;
+        }
+      
+    }
+    .seconde-nav-option{
+         width: 50%;
+         height: 8vh;
+        
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         gap: 10px;
+      
+    }
+    .seconde-nav-option img:first-child{
+         width: 40px;
+         height: 40px;
+         user-select: none;
+      
+    }
+
+    .seconde-nav-option img:nth-child(2){
+         width: 25px;
+         height: 25px;
+         transform: translateY(1px);
+         user-select: none;
+      
+    }
+    .nav-option img:hover{
+        cursor: pointer;
+       
+    }
+  .nav-option img:active{
+        cursor: pointer;
+        background-color: #2a3f2a;
+        border-radius: 10px;
+        padding: 3.4px;
+    }
+
+    .Session-groups{
+       
+       
+         margin-top: 2px;
+       
+         height: 85vh;
+         overflow: auto;
+      
+         border-radius: 10px;
+        
+         background-color: rgb(0,0,0,0.5);
+         backdrop-filter: blur(3px);
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+
+         
+         
+       
+    }
+     
+
+    .add__session{
+        width: 34px;
+        height: 34px;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        position: absolute;
+        bottom:50px;
+        right: 0px;
+    
+        background: rgba(37, 176, 245, 0.9); /* Semi-transparent */
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px); /* Safari/iOS */
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: white;
+        z-index: 1999;
+         filter: drop-shadow(0 0 0.75rem rgb(196, 180, 183));
+
+
+
+
+    }
+    .ContainerSessionadding{
+        position: absolute;
+        bottom:30px;
+        right: 20px;
+        
+        width: 50%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 999;
+        user-select: none;
+        
+    }
+    .create_session_card{
+        width: 80%;
+        height: 40%;
+         
+     
+        border-radius: 30px;
+
+            background: rgba(8, 10, 11, 0.90); /* Semi-transparent /
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); / Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+        /* filter: drop-shadow(0 0 0.75rem crimson); */
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        justify-content: space-around;
+
+        filter: drop-shadow(0 0 0.75rem var(--icon-color));
+        transform: translateX(15px);
+
+        
+
+    }
+    .create_session_card h1{
+         user-select: none;
+         font-size: 15px;
+         color: white;
+         font-family: "Akaya Kanadaka", system-ui;
+         font-weight: 400;
+         font-style: normal;
+    }
+    .avatar_create__session_card{
+        width: 30px;
+        height: 30px;
+       
+        border: 1px solid var(--icon-color);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .avatar_create__session_card img{
+        width: 100%;
+        height: 100%;
+        animation: Rotate 1s  linear infinite;
+    }
+
+    @keyframes Rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .create_session_card2{
+        width: 80%;
+        height: 40%;
+         
+        filter: drop-shadow(0 0 0.75rem var(--icon-color2));
+
+        border-radius: 30px;
+
+            background: rgba(8, 10, 11, 0.90); /* Semi-transparent /
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); / Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+        /* filter: drop-shadow(0 0 0.75rem crimson); */
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .create_session_card2 h1{
+         user-select: none;
+         font-size: 15px;
+         color: white;
+         font-family: "Akaya Kanadaka", system-ui;
+         font-weight: 400;
+         font-style: normal;
+    }
+    .avatar_create__session_card2{
+        width: 30px;
+        height: 30px;
+       
+        border: 1px solid var(--icon-color);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .avatar_create__session_card2 img{
+        width: 100%;
+        height: 100%;
+        animation: Rotate 10s  linear infinite;
+    }
+
+    @keyframes Rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+
+
+    .bounce {
+        transition: all 0.2s ease-in-out;
+    }
+    .bounce:active{
+        transform: scale(1.2);
+
+    }
+
+    .off {
+        display: none;
+    }
 }
 

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./MyTeam.css"
 import { useNavigate } from 'react-router-dom'
 import Card from '../Component/Card'
+import { Plus, X } from 'lucide-react'
 
 const MyTeam = () => {
     
@@ -10,7 +11,8 @@ const MyTeam = () => {
     const HandelReturn = () =>{
         Nav("/login")
     }
-
+ 
+    const [off,SetOff] = useState(true)
 
   return (
     <div className='myTeam'>
@@ -52,9 +54,39 @@ const MyTeam = () => {
         </div>
 
 
+  <div className="add__session bounce" onClick={()=>SetOff((prev)=>!prev)}> 
+   
+    {off ?   <Plus size={25}/>  :  <X size={25}/>}
+  </div>
+
+<div className="ContainerSessionadding" style={{ zIndex:off&& -1}}>
+
+
+  <div 
+  onClick={()=>Nav("/JoinSession")}
+  
+  className={`create_session_card bounce ${off&& 'off'} `}>
+    <h1>Join Session</h1>
+    <div className='avatar_create__session_card'>
+      <img src='/navbaricon/Koura.png'/>
+    </div>
+  </div>
+  
+  
+    <div 
+    onClick={()=>Nav("/CreateSession")}
+    
+    className={`create_session_card2 bounce ${off && 'off'}`}>
+    <h1>Create Session</h1>
+    <div className='avatar_create__session_card2'>
+      <img src='\myTeamIcon/plus.svg'/>
+    </div>
+  </div>
+  
 
 
 
+</div>
 
 
 

@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+ 
+
+html{
+    -webkit-text-size-adjust:100%;
+}
+
+body{
+    touch-action:manipulation;
+}
+
+.container_login{
+    width:100%;
+    min-height:100dvh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+    overflow-y:auto;
+
+    background:
+    radial-gradient(circle at top,#153126 0%,#040708 45%),
+    #040708;
+
+    font-family:"Poppins",sans-serif;
+}
+
+.login_card{
+    width:470px;
+    max-width:100%;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.55);
+}
+
+.login_header{
+    text-align:center;
+}
+
+.login_icon{
+    width:80px;
+    height:80px;
+
+    margin:auto;
+    margin-bottom:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    color:#b8ff30;
+
+    background:#10161a;
+
+    border:2px solid rgba(184,255,48,.25);
+
+    box-shadow:0 0 35px rgba(184,255,48,.15);
+}
+
+.login_header h1{
+    color:#fff;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.login_header p{
+    color:#8d9299;
+    line-height:1.6;
+}
+
+.input_box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    height:60px;
+
+    padding:0 18px;
+
+    border-radius:18px;
+
+    background:#0d1318;
+
+    border:1px solid transparent;
+
+    transition:.3s;
+}
+
+.input_box:focus-within{
+    border-color:#b8ff30;
+    box-shadow:0 0 20px rgba(184,255,48,.18);
+}
+
+.input_box svg{
+    color:#7d838b;
+    flex-shrink:0;
+}
+
+.input_box input{
+    width:100%;
+    height:100%;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:16px; /* Prevents Safari zoom */
+
+    font-family:"Poppins",sans-serif;
+}
+
+.input_box input::placeholder{
+    color:#777d85;
+}
+
+.login_btn{
+    width:100%;
+    height:60px;
+
+    border:none;
+    cursor:pointer;
+
+    border-radius:18px;
+
+    font-size:17px;
+    font-weight:700;
+
+    color:#040708;
+
+    background:linear-gradient(135deg,#b8ff30,#8dd800);
+
+    transition:.35s;
+}
+
+.login_btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(184,255,48,.35);
+}
+
+.login_btn:active{
+    transform:scale(.98);
+}
+
+/* -------------------- Tablet -------------------- */
+
+@media (max-width:768px){
+
+.container_login{
+    padding:18px;
+    align-items:flex-start;
+    padding-top:40px;
+    padding-bottom:30px;
+}
+
+.login_card{
+    width:100%;
+    padding:24px;
+    gap:18px;
+    border-radius:22px;
+}
+
+.login_header h1{
+    font-size:28px;
+}
+
+.login_header p{
+    font-size:14px;
+}
+
+.login_icon{
+    width:65px;
+    height:65px;
+}
+
+.input_box{
+    height:56px;
+    border-radius:15px;
+}
+
+.input_box input{
+    font-size:16px; /* Keep 16px */
+}
+
+.login_btn{
+    height:56px;
+    border-radius:15px;
+    font-size:16px;
+}
+
+}
+
+/* -------------------- Small Phones -------------------- */
+
+@media (max-width:400px){
+
+.container_login{
+    padding:14px;
+    padding-top:25px;
+}
+
+.login_card{
+    padding:18px;
+    border-radius:18px;
+}
+
+.login_header h1{
+    font-size:24px;
+}
+
+.login_header p{
+    font-size:13px;
+}
+
+.login_icon{
+    width:55px;
+    height:55px;
+}
+
+.input_box{
+    height:52px;
+    padding:0 14px;
+}
+
+.input_box input{
+    font-size:16px; /* Never go below 16px */
+}
+
+.login_btn{
+    height:52px;
+    font-size:15px;
+    border-radius:14px;
+}
+
+}
