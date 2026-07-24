@@ -1,0 +1,98 @@
+
+
+.Unlocked{
+    width: 100%;
+    height: 84dvh;
+    background-color: rgb(17, 17, 15);
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.card_unlocked{
+    width: 45%;
+    height: 200px;
+    border: 1px solid var(--icon-color2);
+    border-radius: 10px;
+      background: rgba(8, 10, 11, 0.90); /* Semi-transparent /
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); / Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+           
+
+
+
+
+}
+
+ 
+.image_card_unlocked{
+    width: 100%;
+    height: 54%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+     
+}
+
+
+.titleCardUnlocked{
+        width: 100%;
+        height: 25px;
+        
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+         
+        color: var( --text-color );
+     }
+        .titleCardUnlocked h1{
+        color: white;
+
+        font-weight: bold;
+        font-size: 18px;
+        }
+
+     .titleCardUnlocked2{
+        width: 100%;
+        height: 25%;
+        
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1{
+            font-size: 13px;
+            color: var(--nest-text-color);
+        }
+     }
+
+     .rounderd_card{
+        width: 80px;
+        height: 80px;
+        background-color: black;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        border-radius: 100%;
+
+        filter: drop-shadow(0 0 0.75rem var(--icon-color2));
+     } 
+
+     .rounderd_card img{
+        width: 60%;
+         height: 60%;
+       
+        
+       
+         
+     }

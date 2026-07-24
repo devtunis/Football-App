@@ -4,7 +4,8 @@ import CardInfo from "../Component/CardInfo.jsx"
 import FinshedMatches  from "../Component/FinshedMatches.jsx"
 import axios from "axios"
 import  use from "react"
-
+import { Plus } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 const Scores = () => {
  const [card,SetCard] = useState([
 
@@ -39,6 +40,9 @@ const Scores = () => {
  const [TheirNews , SetTheirNews] =  useState(false)
  const [count,seetCount] = useState(33)
 
+ const [off,Setoff] = useState(false)
+
+ const Nav = useNavigate()
   return (
 
       <> 
@@ -226,7 +230,46 @@ const Scores = () => {
 
 
 
+<div className="container-card-choise">
 
+{
+  off  &&
+
+  
+
+  <div className="container-starts">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div></div>
+</div>
+
+
+}
+
+
+
+
+
+
+  <div
+  
+ onClick={()=>Nav("/CreateMatche")}
+  className={`first_box_1 bounce ${off && 'disable'}`}>
+    <h1>Match</h1>
+    <img src='/myTeamIcon/blueCreate.svg'/>
+    
+  </div>
+
+  <div onClick={()=>Nav("/FinshedMatchComp")} className={`first_box_2 bounce  ${off && 'disable'}`}>
+    <h1>Finshed</h1>
+      <img src='/myTeamIcon/plus.svg'/>
+  </div>
+
+  <div className="plus_containr_i" onClick={()=>Setoff((prev)=>!prev)}>
+    <Plus size={20}/>
+  </div>
+</div>
 
 
 

@@ -11,8 +11,10 @@ import {
   Tooltip
 } from "recharts";
  
-
+import { useNavigate } from 'react-router-dom';
 const Profile = () => {
+
+const Nav = useNavigate()
     const [data,SetData] = useState([
 
 
@@ -143,7 +145,7 @@ const Profile = () => {
             </div>
 
 
-                 <div className="card_session">
+                 <div className="card_session" onClick={()=>Nav("/achievements")}>
                 <div className="left_card_session">
                     <img src='/profile_icon/achievements.svg'/>
                     <h1>Achievements</h1>

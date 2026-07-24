@@ -1,0 +1,10 @@
+.allcards{
+
+    width: 100%;
+    height: 84vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    gap: 10px;
+}

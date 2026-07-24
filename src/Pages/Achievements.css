@@ -1,0 +1,87 @@
+@media (max-width: 800px) {
+
+.Achievements{
+    width: 100%;
+    height: 100dvh;
+    
+    background-color: var(--background-color-icon--containr-color );
+    
+    overflow-y: hidden;
+}
+
+.navbarAchievements{
+    width: 100%;
+    height: 6vh;
+  
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    h1{
+        color: white;
+        font-size: 20px;
+
+    }
+}
+
+.icon_choise_all__button{
+    width: 100%;
+    height: 7vh;
+   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ 
+    margin-bottom: 10px;
+
+
+    background: rgba(8, 10, 11, 0.90); /* Semi-transparent /
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); / Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+
+
+            padding: 2px;
+
+    
+}
+.icon_choise_all__button h1{
+    width: 100px;
+    height:45px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    border-radius: 20px;
+    font-size: 18px;
+    
+
+    background: rgba(8, 10, 11, 0.90); /* Semi-transparent /
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); / Safari/iOS */
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+
+
+
+}
+
+.icon_choise_all__button a{
+    color:var(--nest-text-color);
+    
+    
+}
+
+.onLink{
+   text-decoration: underline;
+   
+}
+}

@@ -1,9 +1,13 @@
 import React from 'react'
 import "./CardInfo.css"
 import Avtar from './Avtar'
+import { useNavigate } from 'react-router-dom'
 const CardInfo = ({teamFull}) => {
+  
+  const Nav = useNavigate()
 const handleVibrate = () => {
-  navigator.vibrate(700);
+ navigator.vibrate(700);
+ 
  
 };
   return (
